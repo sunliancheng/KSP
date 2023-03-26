@@ -1,16 +1,10 @@
-# This is a sample Python script.
+import krpc
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+from dev.connect.ConnectionConfig import ConnectionConfig
+from dev.spaceCraft.common.singleStage.SingleStageRocket import SingleStageRocket
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    conn = krpc.connect(name='hello', address=ConnectionConfig.address, stream_port=ConnectionConfig.stream_port)
+    vessel = SingleStageRocket(conn)
+    vessel.launch()
