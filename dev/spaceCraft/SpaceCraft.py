@@ -2,7 +2,7 @@ from abc import abstractmethod
 
 from krpc import Client
 
-from dev.MetaClass.MetaClass import MetaClass
+from dev.metaClass.MetaClass import MetaClass
 from dev.spaceCraft.SpaceCraftConfig import SpaceCraftConfig
 
 

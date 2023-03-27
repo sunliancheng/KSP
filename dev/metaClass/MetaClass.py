@@ -1,6 +1,6 @@
 from abc import ABC
 
-from dev.Logger.GenericLogger import GenericLogger
+from dev.logger.GenericLogger import GenericLogger
 
 
 class MetaClass(ABC):
