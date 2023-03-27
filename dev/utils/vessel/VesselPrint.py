@@ -1,0 +1,2 @@
+class VesselPrint:
+    pass
