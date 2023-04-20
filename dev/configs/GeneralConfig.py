@@ -2,4 +2,5 @@ from abc import ABC
 
 
 class GeneralConfig(ABC):
-    pass
+    wait_sleep = 0.001
+    warp_sleep = 1
